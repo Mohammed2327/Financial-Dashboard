@@ -10,7 +10,7 @@ const QuickTransfer = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/images.json'); 
+        const response = await fetch(`${process.env.PUBLIC_URL}/images.json`); 
         const data = await response.json();
         setUsers(data); 
       } catch (error) {
