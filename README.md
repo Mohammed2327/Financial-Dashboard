@@ -1,5 +1,5 @@
 Project Setup Instructions
-** First, clone the repository to your local system using the following command: **
+## First, clone the repository to your local system using the following command: ##
 bash
 Copy code
 git clone https://github.com/your-username/your-repository-name.git
