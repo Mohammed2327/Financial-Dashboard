@@ -3,8 +3,7 @@
 ## First, clone the repository to your local system using the following command:
 ### git clone https://github.com/your-username/your-repository-name.git
 
-## Replace your-username/your-repository-name with the actual repository name.
-### cd your-repository-name
+Replace your-username/your-repository-name with the actual repository name.
 
 ## Second, Navigate to the Project Directory ##
 ### cd your-repository-name
