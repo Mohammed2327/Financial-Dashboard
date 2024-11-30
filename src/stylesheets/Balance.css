@@ -1,0 +1,40 @@
+.BalanceHistory {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: -15px 800px; 
+}
+
+
+
+h6 {
+    font-size: 24px;
+    margin: -300px 0 0 800px;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+
+    .GraphContainer {
+        width: 110%; 
+        padding: 10px; 
+        overflow: hidden; 
+    }
+    .BalanceHistory { 
+        min-width: 350px;
+        margin: 20px auto; 
+        padding: 15px; 
+        box-sizing: border-box;
+    }
+
+    h6 {
+        font-size: 18px; 
+        margin: 0; 
+        text-align: left; 
+    }
+}

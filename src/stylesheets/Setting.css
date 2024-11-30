@@ -1,0 +1,215 @@
+.settings-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    margin: -950px auto 0 200px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+
+.tabs-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    gap: 80px;
+}
+
+.tab {
+    padding: 10px 15px;
+    border: 0 solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.tab:hover {
+    background-color: #d1d1d1;
+}
+
+.tab.active {
+    color: black;
+}
+
+.settings-data-container {
+    display: flex;
+    padding: 20px;
+    height: auto;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.tab-content {
+    margin-top: 0;
+    flex: 1;
+    display: flex;
+}
+
+.profile-input-container {
+    display: flex;
+    gap: 50px;
+    flex: 1;
+}
+
+.profile-picture-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.pencil-icon {
+    position: absolute;
+    bottom: 310px;
+    right: 0px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.input-fields-container {
+    flex: 1;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    width: 50%;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+   
+}
+
+.date-picker {
+    width: 218% !important;
+    padding: 10px; 
+    box-sizing: border-box;
+  }
+
+.form-control {
+    width: 90%;
+    padding: 0.8rem;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.error-message{
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.save-button {
+    background-color: black;
+    color: white;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px  40px 0 0;
+   
+} 
+
+@media (max-width: 600px) {
+    .settings-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .tabs-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        overflow-x: auto;
+    }
+
+    .tab {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+        min-width: 80px;
+        box-sizing: border-box;
+    }
+
+    .settings-data-container {
+        flex-direction: column;
+    }
+
+    .profile-input-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-picture-container {
+        margin-bottom: 20px;
+    }
+
+    .profile-picture {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pencil-icon {
+        bottom: 10px;
+        right: 100px;
+    }
+
+    .input-fields-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group {
+        width: 90%;
+    }
+
+    .date-picker {
+        width: 125% !important;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .button-container {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .save-button {
+        padding: 10px 140px;
+        margin: 10px 0;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+}

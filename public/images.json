@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Livia Bator",
+      "role": "CEO",
+      "image": "/profiles/Profile1.jpg"
+    },
+    {
+      "name": "Randy Press",
+      "role": "Director",
+      "image": "/profiles/Profile2.jpg"
+    },
+    {
+      "name": "Workman",
+      "role": "Designer",
+      "image": "/profiles/Profile3.jpg"
+    },
+    {
+        "name": "Workman",
+        "role": "Designer",
+        "image": "/profiles/Profile4.jpg"
+      },
+      {
+        "name": "Workman",
+        "role": "Designer",
+        "image": "/profiles/Profile5.jpg"
+      }
+  ]

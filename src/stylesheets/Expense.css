@@ -1,0 +1,57 @@
+.pie-chart-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.expense-statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -420px 980px auto;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  width: 100%;
+}
+
+.expense-statistics h2 {
+  margin-bottom: 20px;
+  margin-right: 130px;
+  color: #333;
+}
+
+.recharts-tooltip {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.recharts-label {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .pie-chart-container {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 10px;
+  }
+
+  .expense-statistics {
+    margin: -50px auto;
+  }
+
+  .expense-statistics h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+}

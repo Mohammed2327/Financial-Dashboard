@@ -1,0 +1,205 @@
+h5 {
+    position: absolute; 
+    top: -50px; 
+    left: 15%; 
+    transform: translateX(-50%); 
+    margin: 0;
+    font-size: 24px;
+    color: black;
+}
+
+.weekly-list-container {
+    width: 50%;
+    height: 50vh;
+    margin: -600px 0 0 200px;
+    text-align: center;
+    position: relative;
+    border: 2px solid #333;
+    border-radius: 20px;
+    background-color: white; 
+    overflow: visible; 
+}
+
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-top: -200px;
+}
+
+.y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px 0 10px;
+    font-size: 14px;
+    position: relative; 
+}
+
+.y-label {
+    height: 40px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.weekly-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.weekly-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.bars-container {
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.withdraw-bar {
+    background-color: black;
+    width: 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.deposit-bar {
+    background-color: blue;
+    width: 20px;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.day {
+    margin-top: 10px;
+}
+
+.legend {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 220px;
+    right: 30px;
+}
+
+.deposit-legend {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    order: 1;
+}
+
+.withdraw-legend {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    order: 2;
+}
+
+.deposit-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    margin-right: 5px;
+}
+
+.withdraw-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 5px;
+} 
+
+@media (max-width: 600px) {
+    h5 {
+        margin-top: 20px;
+        top: -60px; 
+        left: 75px;
+        font-size: 20px; 
+    }
+
+    .weekly-list-container {
+        width: 90%;
+        height: auto;
+        max-height: 300px;
+        margin: 80px auto;
+        padding: 40px 10px 10px; 
+        overflow: visible;
+    }
+
+    .chart-container {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 45px;
+    }
+
+    .bars-container {
+        height: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .withdraw-bar {
+        background-color: black;
+        width: 6.5px; 
+        border-radius: 20px;
+        margin-right: 5px; 
+    }
+
+    .deposit-bar {
+        background-color: blue;
+        width: 6.5px; 
+        border-radius: 10px;
+        margin-left: -3px; 
+    }
+
+    .weekly-list {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        overflow-x: auto;
+    }
+
+    .weekly-item {
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .legend {
+        flex-direction: row;
+        top: auto;
+        right: 10px;
+        margin-top: -50px;
+    }
+
+    .deposit-legend, .withdraw-legend {
+        margin-left: 10px;
+    }
+
+    .y-axis {
+        margin: -50px -10px;
+        font-size: 12px;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    } 
+}

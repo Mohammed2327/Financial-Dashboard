@@ -1,0 +1,205 @@
+.quick-transfer {
+    max-width: 500px;
+    margin: 50px 0 0 200px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-transfer h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    
+}
+
+.content-container {
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.transfer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.scroll-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.circle-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.circle-button:hover {
+    background-color: #0056b3;
+}
+
+.profiles-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    overflow-x: hidden;
+    gap: 12px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    min-width: 80px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    text-align: center;
+}
+
+.profile span {
+    font-size: 12px;
+    color: #777;
+    margin: 0;
+}
+
+.action-container {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form label {
+    font-size: 14px;
+    color: #555;
+}
+
+.amount-container {
+    display: flex;
+    align-items: center;
+}
+
+.amount-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 100px;
+}
+
+.send-button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.send-button:hover {
+    background-color: #333;
+}
+
+.send-button svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+}
+
+
+@media (max-width: 600px) {
+    .quick-transfer {
+        margin: 50px 10px;
+        padding: 15px;
+    }
+
+    .quick-transfer h2 {
+        font-size: 20px;
+    }
+
+    .content-container {
+        padding: 5px;
+    }
+
+    .transfer-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scroll-buttons {
+        margin: 10px 0;
+    }
+
+    .circle-button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .profiles-container {
+        flex-direction: row;
+        overflow-x: auto;
+        margin-top: 20px;
+    }
+
+    .profile {
+        min-width: 60px;
+    }
+
+    .amount-input {
+        width: 80px;
+    }
+
+    .send-button {
+        margin-left: 10px;
+    }
+}
